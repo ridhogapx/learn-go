@@ -14,9 +14,11 @@ func main() {
 	const (
 		MY_NAME string = "Ridho"
 		X int = 23
+		is_tamvan bool = true
 	)
 	// Formating Output
 	fmt.Println(a + b)
-	fmt.Printf("My name is %v", MY_NAME)
-	fmt.Printf("The number is %#v", X)
+	fmt.Printf("My name is %v\n", MY_NAME)
+	fmt.Printf("The number is %#v\n", X)
+	fmt.Printf("Does he was handsome? %v", is_tamvan)
 }
