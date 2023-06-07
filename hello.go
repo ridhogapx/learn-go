@@ -15,8 +15,8 @@ func main() {
 		MY_NAME string = "Ridho"
 		X int = 23
 	)
-
+	// Formating Output
 	fmt.Println(a + b)
-	fmt.Println(MY_NAME)
-	fmt.Println(X)
+	fmt.Printf("My name is %v", MY_NAME)
+	fmt.Printf("The number is %#v", X)
 }
