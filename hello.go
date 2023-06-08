@@ -108,4 +108,22 @@ func main() {
 		fmt.Printf("Maret \n")
 	}
 
+	// For loop
+	for i := 0; i <= 10; i++ {
+		if i == 5 {
+			continue
+		}
+		fmt.Println(i)
+	}
+
+	fmt.Println("---------------------------")
+
+	// With break keyword
+	for j := 0; j < 10; j++ {
+		if j == 8 {
+			break
+		}
+		fmt.Println(j)
+	}
+
 }
