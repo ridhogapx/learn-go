@@ -9,9 +9,9 @@ func main() {
 
 	// String
 	var name string = "Ridho"
-	fmt.Printf("My name is %v ", name)
+	fmt.Printf("My name is %v \n", name)
 
 	// Untyped
 	greet := "Welcome!"
-	fmt.Println(greet)
+	fmt.Printf("He's said: %v", greet)
 }
