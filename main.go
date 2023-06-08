@@ -213,7 +213,7 @@ func main() {
 	fmt.Println(ok)
 	fmt.Println("---------------------------")
 
-	fruits_map := map[string]string{"name": "Orange", "color": "Yellow"}
+	fruits_map := map[string]string{"name": "Orange", "color": "Yellow", "Vitamin": "C", "Flavour": "Sweet"}
 	second_map := fruits_map
 
 	fmt.Printf("Color fruit: %v \n", fruits_map["color"])
@@ -224,8 +224,9 @@ func main() {
 	fmt.Printf("Color fruit: %v \n", fruits_map["color"])
 	fmt.Printf("Color fruit: %v \n", second_map["color"])
 	fmt.Println("---------------------------")
+
 	// Loop over map
-	for _, val := range fruits_map {
-		fmt.Println(val)
+	for i, val := range fruits_map {
+		fmt.Printf("%v : %v \n", i, val)
 	}
 }
