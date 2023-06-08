@@ -4,6 +4,15 @@ import (
 	"fmt"
 )
 
+func greet(name string) string {
+	msg := "Goodluck " + name
+	return msg
+}
+
+func sum(a int, b int) int {
+	return a + b
+}
+
 func main() {
 	// var str string = "Yoooo it's me, dawg!"
 
@@ -142,5 +151,11 @@ func main() {
 	for _, val := range veggie {
 		fmt.Println(val)
 	}
+
+	fmt.Println("---------------------------")
+
+	// Function
+	fmt.Println(greet("Andy"))
+	fmt.Println(sum(50, 15))
 
 }
