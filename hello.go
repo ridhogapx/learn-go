@@ -53,6 +53,17 @@ func main() {
 	animalsCopy := make([]string, len(needed))
 	copy(animalsCopy, animals)
 
+	// Conditional
+	num_a := 15
+	num_b := 20
+
+	if num_a > num_b {
+		fmt.Printf("A lebih besar daripada B \n")
+
+	} else {
+		fmt.Printf("B lebih besar daripada A \n")
+	}
+
 	// Formating Output
 	fmt.Println(a + b)
 	fmt.Printf("My name is %v. I'm %v years old \n", MY_NAME, age)
@@ -73,5 +84,15 @@ func main() {
 	fmt.Printf("Gabungan dari slices: %v \n", gabungan)
 	fmt.Printf("Slices Fruit: %v \n", slices_fruit)
 	fmt.Printf("Copy of %v \n", animalsCopy)
+
+	x := 5
+	y := 10
+
+	if x >= 5 {
+		fmt.Printf("X lebih besar daripada %v \n", x)
+		if y >= 10 {
+			fmt.Printf("Y lebih besar daripada %v \n", y)
+		}
+	}
 
 }
