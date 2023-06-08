@@ -13,6 +13,14 @@ func sum(a int, b int) int {
 	return a + b
 }
 
+func recursion_example(num int) int {
+	if num == 15 {
+		return 0
+	}
+	fmt.Println(num)
+	return recursion_example(num + 1)
+}
+
 func main() {
 	// var str string = "Yoooo it's me, dawg!"
 
@@ -156,6 +164,25 @@ func main() {
 
 	// Function
 	fmt.Println(greet("Andy"))
-	fmt.Println(sum(50, 15))
+	penjumlahan := sum(34, 70)
+	fmt.Println(penjumlahan)
+	fmt.Println("---------------------------")
+	// Recursion
+	recursion_example(3)
+	fmt.Println("---------------------------")
+	// Struct
+	type Somebody struct {
+		name string
+		age  int
+		job  string
+	}
 
+	var person Somebody
+	person.name = "Galih"
+	person.age = 17
+	person.job = "Programmer"
+
+	fmt.Printf("Name: %v \n", person.name)
+	fmt.Printf("Age: %v \n", person.age)
+	fmt.Printf("Job: %v \n", person.job)
 }
