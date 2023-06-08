@@ -25,15 +25,17 @@ func main() {
 	)
 
 	// Array
-	arr := [3]int{23, 1, 2006}
+	arr := [10]int{23, 1, 2006, 50, 11, 43, 14, 90, 24, 54}
 	var arr2 = [...]string{"Foo", "Bar"}
 	fruits := [5]string{"Mango", "Orange", "Pinapple"}
 
 	arr2[1] = "Whooosh"
 
 	// Slices
-	slice_a := []int{5, 10, 20, 15, 7, 10}
+	slice_a := []int{5, 10, 20, 15, 7, 10, 15, 16, 17}
 	slice_b := []string{"Orange", "Banana", "Apple"}
+	// The syntax is slice_name := array[index_start:index_end]
+	slice_from_array := arr[3:8]
 
 	// Formating Output
 	fmt.Println(a + b)
@@ -48,5 +50,5 @@ func main() {
 	fmt.Printf("Slice B = %v \n", slice_b)
 	fmt.Printf("The length of Slice A: %v \n", len(slice_a))
 	fmt.Printf("The length of Slice B: %v \n", len(slice_b))
-
+	fmt.Printf("Slice from variable 'arr': %v ", slice_from_array)
 }
