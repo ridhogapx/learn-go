@@ -85,6 +85,7 @@ func main() {
 	fmt.Printf("Slices Fruit: %v \n", slices_fruit)
 	fmt.Printf("Copy of %v \n", animalsCopy)
 
+	// If else
 	x := 5
 	y := 10
 
@@ -93,6 +94,18 @@ func main() {
 		if y >= 10 {
 			fmt.Printf("Y lebih besar daripada %v \n", y)
 		}
+	}
+
+	// Switch
+	month := 3
+
+	switch month {
+	case 1:
+		fmt.Printf("Januari \n")
+	case 2:
+		fmt.Printf("Februari \n")
+	case 3:
+		fmt.Printf("Maret \n")
 	}
 
 }
