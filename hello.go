@@ -34,10 +34,16 @@ func main() {
 	// Slices
 	slice_a := []int{5, 10, 20, 15, 7, 10, 15, 16, 17}
 	slice_b := []string{"Orange", "Banana", "Apple"}
+	deretan := []int{23, 20, 25}
+	gabungan := append(slice_a, deretan...)
+
 	// The syntax is slice_name := array[index_start:index_end]
 	slice_from_array := arr[3:8]
 	// Creating slices with make() function
 	slice_with_make := make([]int, 5, 10)
+	// Appending / Adding elements to slice
+	slice_c := append(slice_a, 69, 233, 59, 100)
+	more_fruits := append(slice_b, "Papaya", "Melon", "Grapes", "Jackfruit")
 
 	// Formating Output
 	fmt.Println(a + b)
@@ -53,5 +59,8 @@ func main() {
 	fmt.Printf("The length of Slice A: %v \n", len(slice_a))
 	fmt.Printf("The length of Slice B: %v \n", len(slice_b))
 	fmt.Printf("Slice from variable 'arr': %v \n", slice_from_array)
-	fmt.Printf("Slice with make function: %v", slice_with_make)
+	fmt.Printf("Slice with make function: %v \n", slice_with_make)
+	fmt.Printf("Slice C: %v \n", slice_c)
+	fmt.Printf("More fruits: %v \n", more_fruits)
+	fmt.Printf("Gabungan dari slices: %v", gabungan)
 }
