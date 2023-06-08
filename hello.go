@@ -44,6 +44,14 @@ func main() {
 	// Appending / Adding elements to slice
 	slice_c := append(slice_a, 69, 233, 59, 100)
 	more_fruits := append(slice_b, "Papaya", "Melon", "Grapes", "Jackfruit")
+	// Coba-coba
+	slices_fruit := slice_b[1:3]
+
+	// Memory Efficiency
+	animals := []string{"Cat", "Dog", "Girrafe", "Lion", "Tiger", "Chicken"}
+	needed := animals[:5]
+	animalsCopy := make([]string, len(needed))
+	copy(animalsCopy, animals)
 
 	// Formating Output
 	fmt.Println(a + b)
@@ -62,5 +70,8 @@ func main() {
 	fmt.Printf("Slice with make function: %v \n", slice_with_make)
 	fmt.Printf("Slice C: %v \n", slice_c)
 	fmt.Printf("More fruits: %v \n", more_fruits)
-	fmt.Printf("Gabungan dari slices: %v", gabungan)
+	fmt.Printf("Gabungan dari slices: %v \n", gabungan)
+	fmt.Printf("Slices Fruit: %v \n", slices_fruit)
+	fmt.Printf("Copy of %v \n", animalsCopy)
+
 }
