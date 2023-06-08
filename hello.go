@@ -211,4 +211,17 @@ func main() {
 	// Checking specified elemen inside map
 	_, ok := area["Location"]
 	fmt.Println(ok)
+	fmt.Println("---------------------------")
+
+	fruits_map := map[string]string{"name": "Orang", "color": "Orange"}
+	second_map := fruits_map
+
+	fmt.Printf("Color fruit: %v \n", fruits_map["color"])
+	fmt.Printf("Color fruit: %v \n", second_map["color"])
+
+	second_map["color"] = "Green"
+	fmt.Printf("Setelah perubahan \n")
+	fmt.Printf("Color fruit: %v \n", fruits_map["color"])
+	fmt.Printf("Color fruit: %v \n", second_map["color"])
+
 }
