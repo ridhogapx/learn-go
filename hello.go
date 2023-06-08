@@ -207,4 +207,8 @@ func main() {
 	fmt.Printf("Weapon: %v \n", weapon["name"])
 	fmt.Printf("Price: %v \n", weapon["price"])
 	fmt.Printf("Area: %v \n", area["name"])
+
+	// Checking specified elemen inside map
+	_, ok := area["Location"]
+	fmt.Println(ok)
 }
