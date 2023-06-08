@@ -126,4 +126,21 @@ func main() {
 		fmt.Println(j)
 	}
 
+	// Get element array
+	veggie := [3]string{"Spinach", "Tomato", "Carrot"}
+	for el := 0; el < len(veggie); el++ {
+		fmt.Println(veggie[el])
+	}
+
+	fmt.Println("---------------------------")
+	for i, val := range veggie {
+		fmt.Println(i, val)
+	}
+
+	fmt.Println("---------------------------")
+
+	for _, val := range veggie {
+		fmt.Println(val)
+	}
+
 }
