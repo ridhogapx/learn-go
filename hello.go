@@ -185,4 +185,13 @@ func main() {
 	fmt.Printf("Name: %v \n", person.name)
 	fmt.Printf("Age: %v \n", person.age)
 	fmt.Printf("Job: %v \n", person.job)
+	fmt.Println("---------------------------")
+	// Map
+	// Syntax: map[KeyType]ValueType{key1: value1}
+	agent := map[string]string{"name": "Vandal", "type": "Rifle"}
+	fmt.Printf("Agent: %v", agent)
+	// Map with make()
+	area := make(map[string]string) // The map is empty now
+	area["name"] = "Lotus"
+	area["Location"] = "China"
 }
