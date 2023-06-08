@@ -194,7 +194,17 @@ func main() {
 	area := make(map[string]string) // The map is empty now
 	area["name"] = "Lotus"
 	area["Location"] = "China"
+	area["release"] = "1 October"
+
+	// Deleting map element
+	delete(area, "release")
+	delete(area, "name")
+	fmt.Println(area)
+
+	// Updating map
+	weapon["price"] = "$ 2000"
 
 	fmt.Printf("Weapon: %v \n", weapon["name"])
+	fmt.Printf("Price: %v \n", weapon["price"])
 	fmt.Printf("Area: %v \n", area["name"])
 }
