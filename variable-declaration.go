@@ -10,4 +10,8 @@ func main() {
 	// String
 	var name string = "Ridho"
 	fmt.Printf("My name is %v ", name)
+
+	// Untyped
+	greet := "Welcome!"
+	fmt.Println(greet)
 }
