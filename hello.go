@@ -188,10 +188,13 @@ func main() {
 	fmt.Println("---------------------------")
 	// Map
 	// Syntax: map[KeyType]ValueType{key1: value1}
-	agent := map[string]string{"name": "Vandal", "type": "Rifle"}
-	fmt.Printf("Agent: %v", agent)
+	weapon := map[string]string{"name": "Vandal", "type": "Rifle"}
+	fmt.Printf("Weapon Map: %v \n", weapon)
 	// Map with make()
 	area := make(map[string]string) // The map is empty now
 	area["name"] = "Lotus"
 	area["Location"] = "China"
+
+	fmt.Printf("Weapon: %v \n", weapon["name"])
+	fmt.Printf("Area: %v \n", area["name"])
 }
