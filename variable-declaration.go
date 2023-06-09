@@ -21,6 +21,19 @@ func main() {
 		pet_age int = 1
 	)
 
-	fmt.Printf("I have a %v. Its name is %v. He's %v years old", pet, pet_name, pet_age)
+	fmt.Printf("I have a %v. Its name is %v. He's %v years old \n", pet, pet_name, pet_age)
+
+	var Person string
+
+	Person = "John"
+	fmt.Println(Person)
+
+	Person = "Doe"
+	fmt.Println(Person)
+	
+	Person = "Jane"
+	fmt.Println(Person)
+
+	
 	
 }
