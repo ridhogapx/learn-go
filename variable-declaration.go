@@ -40,4 +40,16 @@ func main() {
 	var cat_age int8 = 1
 	fmt.Println(cat_age)
 	
+	// Tanpa keyword var
+	race := "Jawir"
+	fmt.Println(race)
+
+	var (
+		student_1 = "Budi"
+		student_2 = "Andy"
+	)
+
+	fmt.Println(student_1)
+	fmt.Println(student_2)
+
 }
