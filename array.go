@@ -12,4 +12,24 @@ func main() {
 	}
 
 	fmt.Println(animals)
+
+	// Manual declaration
+	var names [3]string
+	names[0] = "Ridho"
+	names[1] = "Galih"
+	names[2] = "Pambudi"
+
+	fmt.Println(names[0])
+	fmt.Println(names[1])
+	fmt.Println(names[2])
+
+	// Other declaration
+	var myNumber = [3]int8{
+		50,
+		75,
+		100,
+	}
+
+	fmt.Println(myNumber)
+	fmt.Printf("Length of names: %v", len(names))
 }
