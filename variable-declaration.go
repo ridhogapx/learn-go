@@ -34,6 +34,10 @@ func main() {
 	Person = "Jane"
 	fmt.Println(Person)
 
-	
+	var cat = "Momo"
+	fmt.Println(cat)
+
+	var cat_age int8 = 1
+	fmt.Println(cat_age)
 	
 }
