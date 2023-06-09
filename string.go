@@ -3,6 +3,11 @@ package main
 import ("fmt")
 
 func main() {
-	fmt.Println("Good Morning!"[7])
-	fmt.Println(len("Good Morning!"))
+	mystr := "Good Morning!"
+	
+	var first_chara byte = mystr[0]
+
+	// Convert from byte to string
+	fmt.Printf("First character is: %v \n", string(first_chara))
+	fmt.Println(len(mystr))
 }
